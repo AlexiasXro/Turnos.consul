@@ -37,6 +37,8 @@ src/
 ```
 npm install
 npm run dev
+npm install bootstrap
+
 ```
 3. Ejecutar el servidor local
 ```

@@ -1,16 +1,53 @@
-# React + Vite
+# Turnos1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gestión de turnos desarrollado en Laravel/Django (proximo a definir).
 
-Currently, two official plugins are available:
+## 🚀 Características
+- Registro y administración de turnos
+- Gestión de clientes
+- Reportes y estadísticas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías
+- ⚛️ **React**
+- 🎨 **CSS Modules**
+- ⚡ **Vite** (entorno de desarrollo rápido)
+- 💾 **JavaScript ES6+**
+- Python / Django o PHP / Laravel
+- Bootstrap
+- SQLite
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ Estructura del Proyecto
+```
+src/
+├── components/
+│ ├── Navbar.jsx      # Barra de navegación principal
+│ ├── TurnoCard.jsx   # Tarjeta individual de turno
+│ └── Container.jsx   # Contenedor general para la app
+├── data/
+│ └── turnos.js       # Datos simulados (mock) de turnos
+├── App.jsx           # Componente raíz de la aplicación
+├── main.jsx          # Punto de entrada (renderizado React)
+├── styles/
+│ └── App.module.css # Estilos con módulos CSS
+```
+## 📦 Instalación
+1. Clonar el repositorio
+2. Instalar dependencias
+```
+npm install
+npm run dev
+```
+3. Ejecutar el servidor local
+```
+http://localhost:5173
+```
 
-## Expanding the ESLint configuration
+## Captura de Pantalla
+![Vista de Turnos1](./public/screenshot.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Autores
+💼 Desarrolladora de software | Alejandra Romina Cáceres
+
+💼 Desarrollador de software | Ezequiel Nicolas Fogar
+

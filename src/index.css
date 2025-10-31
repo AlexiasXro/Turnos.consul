@@ -8,14 +8,48 @@
   font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Personalizaciones sutiles */
+.logo svg {
+  animation: saltitoSuave 5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes saltitoSuave {
+  0%   { transform: translateY(0); }
+  5%   { transform: translateY(-5px); }
+  10%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+
+
 body {
-
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: var(--color-primary);
+
+
+
+
+.link-animado {
+  position: relative;
+  color: #10b981 !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  animation: resplandor 1.5s infinite;
 }
-a:hover {
-  color: var(--color-primary-light);
+
+@keyframes resplandor {
+  0% {
+    text-shadow: 0 0 0px #10b981;
+  }
+  50% {
+    text-shadow: 0 0 8px #10b981;
+  }
+  100% {
+    text-shadow: 0 0 0px #10b981;
+  }
 }
+

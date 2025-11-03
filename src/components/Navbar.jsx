@@ -26,7 +26,19 @@ export default function Navbar() {
 </Link>
 
         <div className="collapse navbar-collapse">
+
+          <p>
+      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler bg-light icon-tabler-brand-github me-2" width="18" height="18" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5a1.5 1.5 0 0 0 -.5 -1.2c3.5 -.4 7 -1.7 7 -7.5a5.4 5.4 0 0 0 -1.5 -3.8a5.1 5.1 0 0 0 -.1 -3.8s-1.3 -.4 -4.3 1.6a14.8 14.8 0 0 0 -7.8 0c-3 -2 -4.3 -1.6 -4.3 -1.6a5.1 5.1 0 0 0 -.1 3.8a5.4 5.4 0 0 0 -1.5 3.8c0 5.8 3.5 7.1 7 7.5a1.5 1.5 0 0 0 -.5 1.2v3.5" />
+      </svg>
+      <a href="https://github.com/AlexiasXro/Turnos.consul" className="text-light">
+        github.com/AlexiasXro/Turnos.consul
+      </a>
+    </p>
+    
           <ul className="navbar-nav ms-auto">
+            
             <li className="nav-item"><Link className="nav-link link-animado" to="/doctores">Doctores</Link></li>
             <li className="nav-item"><Link className="nav-link " to="/">Inicio</Link></li>
             <li className="nav-item"><Link className="nav-link link-animado" to="/turnos">Turnos</Link></li>

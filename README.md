@@ -2,16 +2,19 @@
 
 Sistema de gestión de turnos desarrollado en Laravel/Django (proximo a definir).
 
+Pagina en vivo-> [Turnoz](https://turnoz.netlify.app/)
+
 ## 🚀 Características
 - Registro y administración de turnos
 - Gestión de clientes
 - Reportes y estadísticas
 
 ## 🛠️ Tecnologías
-- ⚛️ **React**
-- 🎨 **CSS Modules**
-- ⚡ **Vite** (entorno de desarrollo rápido)
-- 💾 **JavaScript ES6+**
+- **React**
+- **CSS Modules**
+- **Vite** 
+- **JavaScript**
+
 - Python / Django o PHP / Laravel
 - Bootstrap
 - SQLite
@@ -22,11 +25,14 @@ Sistema de gestión de turnos desarrollado en Laravel/Django (proximo a definir)
 src/
 ├── components/
 │ ├── Navbar.jsx      # Barra de navegación principal
-│ ├── TurnoCard.jsx   # Tarjeta individual de turno
+│ ├── DoctorCard.jsx  # Tarjeta de doctor
+│ ├── TurnoCard.jsx   # Tarjeta de turno
 │ └── Container.jsx   # Contenedor general para la app
 ├── data/
-│ └── turnos.js       # Datos simulados (mock) de turnos
-├── App.jsx           # Componente raíz de la aplicación
+│ ├── turnos.js       # Datos simulados (mock) de turnos
+│ ├── funcionalidades.jsx 
+│ └── doctores.jsx 
+├── App.jsx           # 
 ├── main.jsx          # Punto de entrada (renderizado React)
 ├── styles/
 │ └── App.module.css # Estilos con módulos CSS
@@ -37,7 +43,7 @@ src/
 ```
 npm install
 npm run dev
-npm install bootstrap
+
 
 ```
 3. Ejecutar el servidor local

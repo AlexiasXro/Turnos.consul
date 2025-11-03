@@ -53,3 +53,9 @@ body {
   }
 }
 
+.bg-gradient-header {
+  background: linear-gradient(135deg, #60a5fa, #20c997); /
+}
+.bg-gradient-card {
+background: linear-gradient(135deg, #0a3c86ff, #599b77ff);
+}

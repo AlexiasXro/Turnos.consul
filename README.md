@@ -8,6 +8,12 @@ Pagina en vivo-> [Turnoz](https://turnoz.netlify.app/)
 - Registro y administración de turnos
 - Gestión de clientes
 - Reportes y estadísticas
+## 🚀 Características Tecnicas
+Autenticación segura con OAuth2 + PKCE
+Entorno dev/prod
+Supabase como backend auxiliar
+React Query
+consumo dinámico de datos desde una API externa.
 
 ## 🛠️ Tecnologías
 - **React**
@@ -22,14 +28,33 @@ Pagina en vivo-> [Turnoz](https://turnoz.netlify.app/)
 
 ## 🏗️ Estructura del Proyecto
 ```
+
 src/
-├── components/
-│ ├── Navbar.jsx      # Barra de navegación principal
-│ ├── DoctorCard.jsx  # Tarjeta de doctor
-│ ├── TurnoCard.jsx   # Tarjeta de turno
-│ └── Container.jsx   # Contenedor general para la app
+├─ components/
+│   ├─ Loader.jsx
+│   ├─ Container.jsx
+│   ├─ DoctorCard.jsx
+│   ├─ LandingPage.jsx
+│   ├─ Navbar.jsx
+│   ├─ ErrorMessage.jsx
+│   └─ TurnoCard.jsx
+├─ hooks/
+│   ├─ useAuth.js
+│   ├─ useCalendarEvents.js
+│   └─ useTurnos.js
+├─ services/
+│   ├─ googleAuth.js
+│   ├─ googleCalendar.js
+│   └─ tokenService.js
+├─ pages/
+│   ├─ Login.jsx
+│   ├─ AuthCallback.jsx
+│   ├─ CalendarEvents.jsx
+│   └─ Turnos.jsx
+├─ utils/
+│    └─ formatDate.js
 ├── data/
-│ ├── turnos.js       # Datos simulados (mock) de turnos
+│ ├── turnos.js       # Datos simulados (mock) de turnos - Remplazado por google calendar
 │ ├── funcionalidades.jsx 
 │ └── doctores.jsx 
 ├── App.jsx           # 

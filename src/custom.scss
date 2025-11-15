@@ -1,12 +1,26 @@
 // 1. Sobrescribí variables antes de importar Bootstrap
-$primary: #3B82F6;     
-$secondary: #10B981;   
-$success: #22C55E;
-$danger: #EF4444;
-$info: #0EA5E9;
-$warning: #FACC15;
-$light: #e6e6e6;
-$dark: #1f2b3d;
+//$primary: #3B82F6;     
+//$secondary: #10B981;   
+//$success: #22C55E;
+//$danger: #EF4444;
+//$info: #0EA5E9;
+//$warning: #FACC15;
+//$light: #e6e6e6;
+//$dark: #1f2b3d;
 
 // 2. Importá Bootstrap
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap" as *;
+
+// // En lugar de @import, usamos @use
+// // El "as *" expone todas las variables y mixins de Bootstrap directamente
+// @use "bootstrap/scss/bootstrap" as *;
+
+// // Tus estilos personalizados pueden ir debajo
+// body {
+//   background-color: $body-bg;
+//   font-family: $font-family-base;
+// }
+
+// .btn-custom {
+//   @include button-variant(#0d6efd, #fff);
+// }

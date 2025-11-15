@@ -8,3 +8,4 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 // Usarlo asi en cada componente
 // import { supabase } from '../services/supabaseClient'
+//punto de entrada

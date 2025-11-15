@@ -9,7 +9,7 @@ export default function LandingPage() {
           <h1 className="display-4 fw-bold">Centro Salud</h1>
           <p className="lead">Gestión de turnos simple, rápida y segura</p>
           <div className="mt-4">
-            <button className="btn btn-dark me-2">Ingresar al sistema</button>
+            <button className="btn btn-dark me-2" to="/login" >Ingresar al sistema</button>
             <button className="btn btn-outline-dark">Solicitar turno</button>
           </div>
         </div>

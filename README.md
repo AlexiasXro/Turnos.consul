@@ -20,7 +20,7 @@ Pagina en vivo-> [Turnoz](https://turnoz.netlify.app/)
 - SQLite
 
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Estructura del Proyecto  Entrega 1
 ```
 src/
 ├── components/
@@ -37,6 +37,28 @@ src/
 ├── styles/
 │ └── App.module.css # Estilos con módulos CSS
 ```
+
+
+## Entrega 2
+### 📡 API utilizada
+
+Este proyecto consume datos desde [MockAPI](https://mockapi.io/clone/691f29efbb52a1db22c0b7fd).
+
+#### Recursos disponibles
+- **Doctores**: CRUD completo (crear, editar, eliminar y listar doctores con nombre, especialidad, días disponibles y horarios).
+- **Turnos**: CRUD completo (crear, editar, eliminar y listar turnos con paciente, fecha, hora y doctor asignado).
+
+####  Funcionalidad
+- Los datos ya no están hardcodeados: se obtienen dinámicamente desde la API.
+- Se utiliza **React Query** para manejar las peticiones (loading, error, cache).
+- Los formularios permiten crear y editar registros, con opción de cancelar.
+- Al eliminar un registro, se solicita confirmación para mayor seguridad.
+- La vista muestra todos los campos relevantes (`createdAt`, `id`, etc.), formateados para mejor legibilidad.
+
+**NOTA**: Hoy los horarios y turnos están separados.
+El proyecto ya cumple con la entrega (CRUD dinámico, API, formularios).
+En el futuro se planea la integración con Google Calendar para un flujo más profesional.
+
 ## 📦 Instalación
 1. Clonar el repositorio
 2. Instalar dependencias
